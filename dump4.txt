@@ -1,0 +1,3 @@
+13:39:07.361294 == Info: Rebuilt URL to: facebook.com/
+13:39:27.892333 == Info: Could not resolve host: facebook.com
+13:39:27.892380 == Info: Closing connection 0
