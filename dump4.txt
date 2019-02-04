@@ -1,3 +1,210 @@
-13:39:07.361294 == Info: Rebuilt URL to: facebook.com/
-13:39:27.892333 == Info: Could not resolve host: facebook.com
-13:39:27.892380 == Info: Closing connection 0
+16:55:00.666762 == Info: Rebuilt URL to: facebook.com/
+16:55:00.919589 == Info:   Trying 157.240.20.35...
+16:55:00.919638 == Info: TCP_NODELAY set
+16:55:00.986647 == Info: Connected to facebook.com (157.240.20.35) port 80 (#0)
+16:55:00.986771 => Send header, 76 bytes (0x4c)
+0000: GET / HTTP/1.1
+0010: Host: facebook.com
+0024: User-Agent: curl/7.58.0
+003d: Accept: */*
+004a: 
+16:55:01.653527 <= Recv header, 20 bytes (0x14)
+0000: HTTP/1.1 302 Found
+16:55:01.653696 <= Recv header, 33 bytes (0x21)
+0000: Location: https://facebook.com/
+16:55:01.653893 <= Recv header, 42 bytes (0x2a)
+0000: Content-Type: text/html; charset="utf-8"
+16:55:01.653999 <= Recv header, 102 bytes (0x66)
+0000: X-FB-Debug: ppQOmlbZUILvL/A7n4Y4rJqy6twQ/t7uwMNkdCoQkw29C71POkNE
+0040: +FnSwEIXTWf4qqAGOLq215K+CPoFvrV+Ew==
+16:55:01.654077 <= Recv header, 37 bytes (0x25)
+0000: Date: Mon, 04 Feb 2019 11:54:22 GMT
+16:55:01.654139 <= Recv header, 19 bytes (0x13)
+0000: Content-Length: 0
+16:55:01.654198 <= Recv header, 24 bytes (0x18)
+0000: Connection: Keep-Alive
+16:55:01.654273 <= Recv header, 2 bytes (0x2)
+0000: 
+16:55:01.654355 == Info: Connection #0 to host facebook.com left intact
+16:55:01.654399 == Info: Issue another request to this URL: 'https://facebook.com/'
+16:55:01.658703 == Info:   Trying 157.240.20.35...
+16:55:01.658731 == Info: TCP_NODELAY set
+16:55:01.670479 == Info: Connected to facebook.com (157.240.20.35) port 443 (#1)
+16:55:01.671587 == Info: ALPN, offering h2
+16:55:01.671606 == Info: ALPN, offering http/1.1
+16:55:01.710510 == Info: successfully set certificate verify locations:
+16:55:01.710536 == Info:   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+16:55:01.723843 => Send SSL data, 5 bytes (0x5)
+0000: .....
+16:55:01.723922 == Info: TLSv1.2 (OUT), TLS handshake, Client hello (1):
+16:55:01.723932 => Send SSL data, 210 bytes (0xd2)
+0000: ........"...b.a..I..$......-r.......A...8.,.0.........+./...$.(.
+0040: k.#.'.g.....9.....3.....=.<.5./.....m.........facebook.com......
+0080: ................3t.........h2.http/1.1........... ..............
+00c0: ..................
+16:55:11.750436 <= Recv SSL data, 5 bytes (0x5)
+0000: ....j
+16:55:11.750597 == Info: TLSv1.2 (IN), TLS handshake, Server hello (2):
+16:55:11.750639 <= Recv SSL data, 106 bytes (0x6a)
+0000: ...f..V....Vc..n.0.[......eC\..lk.@..1 .b......!.l......m.....j)
+0040: ...S..F.+...............................h2
+16:55:11.750832 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:55:12.155954 == Info: TLSv1.2 (IN), TLS handshake, Certificate (11):
+16:55:12.155996 <= Recv SSL data, 2805 bytes (0xaf5)
+0000: .........30../0...............-a?d......k0...*.H........0p1.0...
+0040: U....US1.0...U....DigiCert Inc1.0...U....www.digicert.com1/0-..U
+0080: ...&DigiCert SHA2 High Assurance Server CA0...190121000000Z..190
+00c0: 421120000Z0a1.0...U....US1.0...U....CA1.0...U....Menlo Park1.0..
+0100: .U....Facebook, Inc.1.0...U....*.facebook.com0Y0...*.H.=....*.H.
+0140: =....B...u.0N.1".Z...+.... \..(..da.>..1.F.n:..N.z..$.P..*T4..rD
+0180: .{j.>.......0...0...U.#..0...Qh.....u<..edb...Yr;0...U......{...
+01c0: jH......B....t.[0....U.....0....*.facebook.com..*.messenger.com.
+0200: .*.facebook.net..messenger.com..*.fbsbx.com..*.xz.fbcdn.net..*.f
+0240: bcdn.net..fb.com..*.fb.com..*.m.facebook.com..facebook.com..*.xy
+0280: .fbcdn.net..*.xx.fbcdn.net0...U...........0...U.%..0...+........
+02c0: .+.......0u..U...n0l04.2.0..http://crl3.digicert.com/sha2-ha-ser
+0300: ver-g6.crl04.2.0..http://crl4.digicert.com/sha2-ha-server-g6.crl
+0340: 0L..U. .E0C07..`.H...l..0*0(..+.........https://www.digicert.com
+0380: /CPS0...g.....0....+........w0u0$..+.....0...http://ocsp.digicer
+03c0: t.com0M..+.....0..Ahttp://cacerts.digicert.com/DigiCertSHA2HighA
+0400: ssuranceServerCA.crt0...U.......0.0.....+.....y............u..K.
+0440: .u.`..Bi....f..~_.r....{.z......hrE.......F0D. y.1...Yl|...8...S
+0480: ..>..<f..Pn<.... d..-......4....R...m.!...........v..u..Y|..C._.
+04c0: .n.V.GV6.J.`....^......hrE.......G0E. o:.........w'..+ .j=....;.
+0500: ...L...!.....!...2.UE.C4.[..x\..>.I.....V0...*.H................
+0540: .;.B.,X:...<yR.9...Q...y8..5..0{...6.. md.y..:.R.x.."z(fj...O
+0580: |J........af..]B....z............p.f..u..r/.....lY...Im.Ry.Fo^.d
+05c0: ...b........cI.g...1.t.....w.........#.E.j...u...8gU..q...Y.M...
+0600: o...@]...,.s.w...C^x.r..q..&.g:.....^@..'....Ec.l..8.. ....W....
+0640: 0...0...............\..m.+B.]..0...*.H........0l1.0...U....US1.0
+0680: ...U....DigiCert Inc1.0...U....www.digicert.com1+0)..U..."DigiCe
+06c0: rt High Assurance EV Root CA0...131022120000Z..281022120000Z0p1.
+0700: 0...U....US1.0...U....DigiCert Inc1.0...U....www.digicert.com1/0
+0740: -..U...&DigiCert SHA2 High Assurance Server CA0.."0...*.H.......
+0780: ......0........../.$..m._...d..}"&e..B@.....v.>.0U...O..Z..UV...
+07c0: *.....@...;r............C:.......@....M._W..Ph................-.
+0800: .........^DX*7..5...'2Z......Q.'..;B3..(..(...+#.x.{.^q.J>......
+0840: ..#.M.....u.......D5eS%9....c...th.7..RH.9Z...]... .!..&o.J!A..
+0880: m..H/....h.S/^.........I0..E0...U.......0.......0...U...........
+08c0: 0...U.%..0...+.........+.......04..+........(0&0$..+.....0...htt
+0900: p://ocsp.digicert.com0K..U...D0B0@.>.<.:http://crl4.digicert.com
+0940: /DigiCertHighAssuranceEVRootCA.crl0=..U. .60402..U. .0*0(..+....
+0980: .....https://www.digicert.com/CPS0...U......Qh.....u<..edb...Yr;
+09c0: 0...U.#..0....>.i...G...&....cd+.0...*.H...................m.\..
+0a00: h.J...Q/.kD...c..nl.....q.[.4N..y.).-.j.. .y...G.....Yq}...k.YX=
+0a40: ..1%\.8.......[.1N.x.....I..'..r.>..A...6...nGI^.H|....I..&B@..
+0a80: ...d.WT.....^k......r.V....0..0..N.W..$...+..u..-..}y'.........
+0ac0: ... (AYC(......{;w.@b..AE....>..3.g.a.r..i...W@.p....
+16:55:12.174042 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:55:12.174204 == Info: TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+16:55:12.174227 <= Recv SSL data, 148 bytes (0x94)
+0000: .......A...K..'.....,.....^Ije%-....P.X..d.k..0.,...O....7...X..
+0040: .(..u|7.~...G0E. ...&.s...flGj..-...Q[.p.DKt.....!.....d..<fDP.
+0080: .|y&-....w.>`..u8my7
+16:55:12.176481 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:55:12.176593 == Info: TLSv1.2 (IN), TLS handshake, Server finished (14):
+16:55:12.176612 <= Recv SSL data, 4 bytes (0x4)
+0000: ....
+16:55:12.177069 => Send SSL data, 5 bytes (0x5)
+0000: ....F
+16:55:12.177128 == Info: TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+16:55:12.177144 => Send SSL data, 70 bytes (0x46)
+0000: ...BA.%+.f...&.je.Tj.....cD....j....l....fd9...~.....e.C.k.lldv.
+0040: ..P...
+16:55:12.177296 => Send SSL data, 5 bytes (0x5)
+0000: .....
+16:55:12.177337 == Info: TLSv1.2 (OUT), TLS change cipher, Client hello (1):
+16:55:12.177352 => Send SSL data, 1 bytes (0x1)
+0000: .
+16:55:12.177544 => Send SSL data, 5 bytes (0x5)
+0000: ....(
+16:55:12.177589 == Info: TLSv1.2 (OUT), TLS handshake, Finished (20):
+16:55:12.177604 => Send SSL data, 16 bytes (0x10)
+0000: ....Y..Fe....M..
+16:55:12.704195 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:55:12.704473 <= Recv SSL data, 5 bytes (0x5)
+0000: ....(
+16:55:12.704654 == Info: TLSv1.2 (IN), TLS handshake, Finished (20):
+16:55:12.704679 <= Recv SSL data, 16 bytes (0x10)
+0000: ......M...&4...O
+16:55:12.704815 == Info: SSL connection using TLSv1.2 / ECDHE-ECDSA-AES128-GCM-SHA256
+16:55:12.704841 == Info: ALPN, server accepted to use h2
+16:55:12.704873 == Info: Server certificate:
+16:55:12.704905 == Info:  subject: C=US; ST=CA; L=Menlo Park; O=Facebook, Inc.; CN=*.facebook.com
+16:55:12.704928 == Info:  start date: Jan 21 00:00:00 2019 GMT
+16:55:12.704945 == Info:  expire date: Apr 21 12:00:00 2019 GMT
+16:55:12.704996 == Info:  subjectAltName: host "facebook.com" matched cert's "facebook.com"
+16:55:12.705032 == Info:  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert SHA2 High Assurance Server CA
+16:55:12.705048 == Info:  SSL certificate verify ok.
+16:55:12.705113 == Info: Using HTTP2, server supports multi-use
+16:55:12.705130 == Info: Connection state changed (HTTP/2 confirmed)
+16:55:12.705148 == Info: Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+16:55:12.705186 => Send SSL data, 5 bytes (0x5)
+0000: ....0
+16:55:12.705314 => Send SSL data, 5 bytes (0x5)
+0000: ....3
+16:55:12.705400 => Send SSL data, 5 bytes (0x5)
+0000: ....%
+16:55:12.705473 == Info: Using Stream ID: 1 (easy handle 0x559b8cafb780)
+16:55:12.705519 => Send SSL data, 5 bytes (0x5)
+0000: ....>
+16:55:12.705563 => Send header, 74 bytes (0x4a)
+0000: GET / HTTP/2
+000e: Host: facebook.com
+0022: User-Agent: curl/7.58.0
+003b: Accept: */*
+0048: 
+16:55:12.705619 <= Recv SSL data, 5 bytes (0x5)
+0000: ....L
+16:55:12.705660 == Info: Connection state changed (MAX_CONCURRENT_STREAMS updated)!
+16:55:12.705684 => Send SSL data, 5 bytes (0x5)
+0000: ....!
+16:55:13.160156 <= Recv SSL data, 5 bytes (0x5)
+0000: ....!
+16:55:13.160246 <= Recv SSL data, 5 bytes (0x5)
+0000: ....%
+16:55:13.160289 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:55:13.168686 <= Recv header, 13 bytes (0xd)
+0000: HTTP/2 301 
+16:55:13.168726 <= Recv header, 37 bytes (0x25)
+0000: location: https://www.facebook.com/
+16:55:13.168743 <= Recv header, 54 bytes (0x36)
+0000: strict-transport-security: max-age=15552000; preload
+16:55:13.168763 <= Recv header, 42 bytes (0x2a)
+0000: content-type: text/html; charset="utf-8"
+16:55:13.168787 <= Recv header, 102 bytes (0x66)
+0000: x-fb-debug: WP3goxga8jzm5DQ2zt5FU1RnwVJ7gvMc/dDiByDLNj7MmbKjga1n
+0040: 4/km8Ofutrj9/qSt0g3gW+zTOQkqa5UKpw==
+16:55:13.168815 <= Recv header, 19 bytes (0x13)
+0000: content-length: 0
+16:55:13.168836 <= Recv header, 37 bytes (0x25)
+0000: date: Mon, 04 Feb 2019 11:54:34 GMT
+16:55:13.168858 <= Recv header, 2 bytes (0x2)
+0000: 
+16:55:13.168881 <= Recv data, 0 bytes (0x0)
+16:55:13.168911 == Info: Connection #1 to host facebook.com left intact
+16:55:13.168924 == Info: Issue another request to this URL: 'https://www.facebook.com/'
+16:55:13.168948 == Info: Connection 0 seems to be dead!
+16:55:13.168956 == Info: Closing connection 0
+16:55:13.421734 == Info:   Trying 31.13.84.36...
+16:55:13.421771 == Info: TCP_NODELAY set
+16:55:13.481576 == Info: Connected to www.facebook.com (31.13.84.36) port 443 (#2)
+16:55:13.481786 == Info: ALPN, offering h2
+16:55:13.481801 == Info: ALPN, offering http/1.1
+16:55:13.494752 == Info: successfully set certificate verify locations:
+16:55:13.494773 == Info:   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+16:55:13.494871 => Send SSL data, 5 bytes (0x5)
+0000: .....
+16:55:13.494926 == Info: TLSv1.2 (OUT), TLS handshake, Client hello (1):
+16:55:13.494940 => Send SSL data, 214 bytes (0xd6)
+0000: .........K..."...~..........~...%5.}.z..8.,.0.........+./...$.(.
+0040: k.#.'.g.....9.....3.....=.<.5./.....q.........www.facebook.com..
+0080: ....................3t.........h2.http/1.1........... ..........
+00c0: ......................

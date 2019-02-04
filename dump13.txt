@@ -1,0 +1,23 @@
+$ curl -F file=@test.c https://httpbin.org/post
+===============================
+
+{
+  "args": {}, 
+  "data": "", 
+  "files": {
+    "file": "//\n//  main.c\n//  Ticket\n//\n//  Created by botirjon nasridinov on 19/12/2018.\n//  Copyright \u00a9 2018 Orient Software Team. All rights reserved.\n//\n\n#include <stdio.h>\n#include <stdlib.h>\n#include \"string.h\"\n\ntypedef struct Match {\n    int id;\n    int stadium_id;\n    char * stadium_name;\n} Match;\n\nint main(int argc, const char * argv[]) {\n    // insert code here...\n    \n    Match match;\n    match.id = 12;\n    match.stadium_id = 23;\n    match.stadium_name = \"Maracano\";\n    \n    printf(\"%lu\\n\", strlen(match.stadium_name));\n\n    char * buffer;\n    buffer = (char *) malloc(2 * sizeof(int) + strlen(match.stadium_name) + 1);\n    memcpy(buffer, &match.id, sizeof(int));\n    memcpy(&buffer[sizeof(int)], &match.stadium_id, sizeof(int));\n    memcpy(&buffer[2 * sizeof(int)], match.stadium_name, strlen(match.stadium_name) + 1);\n    \n    int * id = (int*)malloc(sizeof(int));\n    memcpy(id, buffer, sizeof(int));\n    \n    int * stadium_id = (int*)malloc(sizeof(int));\n    memcpy(stadium_id, buffer + sizeof(int), sizeof(int));\n    \n    char * stadium_name = (char*)malloc(strlen(match.stadium_name) + 1);\n    memcpy(stadium_id, buffer + 2 * sizeof(int), strlen(match.stadium_name) + 1);\n    \n    printf(\"id=%d\\nstadium_id=%d\\nstadium_name=%s\\n\", *id, *stadium_id, stadium_name);\n    \n    return 0;\n}"
+  }, 
+  "form": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Connection": "close", 
+    "Content-Length": "1493", 
+    "Content-Type": "multipart/form-data; boundary=------------------------0a6f942d686a6e64", 
+    "Expect": "100-continue", 
+    "Host": "httpbin.org", 
+    "User-Agent": "curl/7.58.0"
+  }, 
+  "json": null, 
+  "origin": "87.237.236.162", 
+  "url": "https://httpbin.org/post"
+}

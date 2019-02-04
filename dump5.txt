@@ -1,0 +1,12 @@
+{
+  "args": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Connection": "close", 
+    "Host": "httpbin.org", 
+    "User-Agent": "curl/7.58.0"
+    "X-My-Custom-Header" :"123"
+  }, 
+  "origin": "87.237.236.162", 
+  "url": "https://httpbin.org/get"
+}

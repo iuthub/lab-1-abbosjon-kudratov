@@ -1,0 +1,19 @@
+$ curl -X POST https://httpbin.org/post
+==============================
+
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Connection": "close", 
+    "Content-Length": "0", 
+    "Host": "httpbin.org", 
+    "User-Agent": "curl/7.58.0"
+  }, 
+  "json": null, 
+  "origin": "87.237.236.162", 
+  "url": "https://httpbin.org/post"
+}

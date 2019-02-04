@@ -1,0 +1,13 @@
+$curl -A Mozilla /5.0 https://httpbin.org/get
+========================================
+{
+  "args": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Connection": "close", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Mozilla/5.0"
+  }, 
+  "origin": "87.237.236.162", 
+  "url": "https://httpbin.org/get"
+}

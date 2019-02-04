@@ -1,0 +1,22 @@
+$ curl --data @data.json https://httpbin.org/post
+===================================
+
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "{\"email\" : \"test@example.com\" ,\"name\" : [\"Boolean\" , \"World\"]}": ""
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Connection": "close", 
+    "Content-Length": "62", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "User-Agent": "curl/7.58.0"
+  }, 
+  "json": null, 
+  "origin": "87.237.236.162", 
+  "url": "https://httpbin.org/post"
+}

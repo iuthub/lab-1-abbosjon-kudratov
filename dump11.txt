@@ -1,0 +1,28 @@
+$ curl --data -urlencode "email=abbosjon1997@gmail.com" https://httpbin.org/post
+===========================
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://www.google.com/gmail/">here</A>.
+</BODY></HTML>
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "-urlencode": ""
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Connection": "close", 
+    "Content-Length": "10", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "User-Agent": "curl/7.58.0"
+  }, 
+  "json": null, 
+  "origin": "87.237.236.162", 
+  "url": "https://httpbin.org/post"
+}

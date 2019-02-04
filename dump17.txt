@@ -1,0 +1,18 @@
+$ curl -I https://www.booleanworld.com/
+==============================
+
+HTTP/2 200 
+date: Mon, 04 Feb 2019 13:00:14 GMT
+content-type: text/html; charset=UTF-8
+set-cookie: __cfduid=d207f92c45980af84366225d833c6270f1549285214; expires=Tue, 04-Feb-20 13:00:14 GMT; path=/; domain=.booleanworld.com; HttpOnly; Secure
+vary: Accept-Encoding, Cookie
+cache-control: max-age=3, must-revalidate
+last-modified: Mon, 04 Feb 2019 12:32:27 GMT
+x-frame-options: sameorigin
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+x-content-type-options: nosniff
+expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+server: cloudflare
+cf-ray: 4a3d51ae9aabcafa-ARN
+
